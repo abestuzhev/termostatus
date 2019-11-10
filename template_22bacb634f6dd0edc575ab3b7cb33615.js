@@ -11204,7 +11204,14 @@ $(document).ready(function(){
                                 submenyHTML += "<div class='bxr-children-color-hover'>" + textThis.html() + "</div>";
                             });
                             submenyHTML += '</div>';
-                        } else if ($(this).children("div.bxr-list-hover-menu").children("div.bxr-element-hover-menu").length > 0) {
+
+						} else if ($(this).find(".c-menu-category__link").length > 0) {
+							addNode = true;
+							submenyHTML += '<div class="submenu_item" data-parent="'+identity+'">';
+							textThis = $('.c-menu').clone();
+							submenyHTML += "<div class='bxr-children-color-hover'>" + textThis.html() + "</div>";
+							submenyHTML += '</div>';
+						} else if ($(this).children("div.bxr-list-hover-menu").children("div.bxr-element-hover-menu").length > 0) {
                             addNode = true;
                             submenyHTML += '<div class="submenu_item" data-parent="'+identity+'">';
                             $(this).children("div.bxr-list-hover-menu").children("div.bxr-element-hover-menu").children('div.item').each(function(){

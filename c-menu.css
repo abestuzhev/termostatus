@@ -1,5 +1,5 @@
 .c-menu {
-    padding: 0 40px;
+    padding: 0 60px;
 }
 
 .c-menu-col {
@@ -23,12 +23,47 @@
     color: #1a212c;
     font-size: 17px;
     font-weight: 700;
+    position: relative;
+    padding-left: 38px;
+}
+
+.c-menu-category__title a {
+    text-decoration: none;
+    color: #1a212c;
+}
+
+.c-menu-category__icon {
+    position: absolute;
+    left: -20px;
+    top: -7px;
+    width: 41px;
+    height: 41px;
+    border: 1px solid #888e98;
+    border-radius: 150px;
+}
+
+.c-menu-category__icon img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    display: block;
+    width: 22px;
+    height: 22px;
 }
 
 .c-menu-category__list {
     padding: 0 40px;
     border-left: 1px solid #e5e5e5;
     margin-bottom: 30px;
+}
+
+.c-menu-category__link:nth-child(1) {
+    padding-top: 0;
 }
 
 .c-menu-category__link {
@@ -46,4 +81,73 @@
 .c-menu-category__link:hover {
     color: #147bd0;
     text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+    .c-menu {
+        padding: 0 0 20px;
+    }
+
+    .c-menu-category__icon {
+        display: none;
+    }
+
+    .c-menu-category__list {
+        padding: 0 10px;
+    }
+
+    .c-menu-category__title {
+        padding: 0;
+    }
+
+    .c-menu-col {
+         height: auto;
+        -webkit-column-width: 220px;
+        -moz-column-width: 220px;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .c-menu-col {
+        padding: 20px;
+    }
+
+    .c-menu-category__link {
+        padding: 10px 0 !important;
+    }
+
+    .c-menu-col {
+        -webkit-column-gap: 3em;
+        -moz-column-gap: 3em;
+        column-gap: 3em;
+    }
+
+    .c-menu-category__list {
+        padding: 0 20px;
+    }
+
+    .c-menu-category__title a {
+        padding: 0 !important;
+    }
+
+    .c-menu-col {
+         height: auto;
+        -webkit-column-width: 220px;
+        -moz-column-width: 220px;
+    }
+
+    .c-menu-category__list {
+        margin-bottom: 14px;
+    }
+}
+
+@media (max-width: 680px) {
+
+    .c-menu-col {
+        -webkit-column-gap: 10em;
+        -moz-column-gap: 10em;
+        column-gap: 10em;
+    }
+
 }
