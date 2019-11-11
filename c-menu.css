@@ -3,7 +3,7 @@
 }
 
 .c-menu-col {
-    height: 548px;
+    /*height: 548px;*/
     -webkit-column-width: 300px;
     -moz-column-width: 300px;
     column-width: 300px;
@@ -11,6 +11,7 @@
     -webkit-column-gap: 2em;
     -moz-column-gap: 2em;
     column-gap: 2em;
+    padding: 0 0 20px;
 }
 
 .c-menu-category {
@@ -25,6 +26,7 @@
     font-weight: 700;
     position: relative;
     padding-left: 38px;
+    padding-top: 12px;
 }
 
 .c-menu-category__title a {
@@ -35,7 +37,7 @@
 .c-menu-category__icon {
     position: absolute;
     left: -20px;
-    top: -7px;
+    top: 0;
     width: 41px;
     height: 41px;
     border: 1px solid #888e98;
